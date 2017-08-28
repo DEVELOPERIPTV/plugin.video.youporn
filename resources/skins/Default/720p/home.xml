@@ -1,0 +1,302 @@
+<window>
+  <id>13001</id>
+  <defaultcontrol>401</defaultcontrol>
+  <type>window</type>
+  <coordinates>
+    <system>1</system>
+    <posx>0</posx>
+    <posy>0</posy>
+    <views>50</views>
+  </coordinates>
+  <controls>
+      <control type="multiimage">
+          <description>Backgrounds</description>
+          <width>1280</width>
+          <height>720</height>
+          <visible>true</visible>
+          <imagepath>special://home/addons/plugin.video.youporn/resources/backgrounds/</imagepath>
+          <timeperimage>10000</timeperimage>
+          <fadetime>1000</fadetime>
+          <randomize>true</randomize>
+      </control>
+          <control type="group">
+              <description>Side Menu</description>
+              <top>0</top>
+              <left>0</left>
+              <width>350</width>
+              <control type="image">
+                      <description>Side Menu</description>
+                      <width>350</width>
+                      <height>720</height>
+                      <visible>true</visible>
+                      <texture>side.png</texture>
+              </control>
+              <control type="image">
+                      <description>Side Menu</description>
+                      <width>350</width>
+                      <height>720</height>
+                      <visible>true</visible>
+                      <texture>side.png</texture>
+              </control>
+              <control type="image">
+                      <description>Side Menu</description>
+                      <left>360</left>
+                      <width>910</width>
+                      <height>720</height>
+                      <visible>true</visible>
+                      <texture>side.png</texture>
+              </control>
+              <control type="grouplist">
+                  <top>75</top>
+                  <left>25</left>
+                  <control type="image">
+                        <top>50</top>
+                        <width>300</width>
+                        <height>131</height>
+                        <texture>logo.png</texture>
+                  </control>
+
+                  <control type="list" id="401">
+                        <description>Categories</description>
+                        <top>150</top>
+                        <onright>402</onright>
+                        <width>300</width>
+                        <height>500</height>
+                        <visible>true</visible>
+                        <onup>2</onup>
+                        <ondown>3</ondown>
+                        <onleft>1</onleft>
+                        <onright>1</onright>
+                        <viewtype label="3D list">list</viewtype>
+                        <orientation>vertical</orientation>
+                        <pagecontrol>25</pagecontrol>
+                        <scrolltime tween="sine" easing="out">200</scrolltime>
+                        <itemlayout width="300" height="45">
+                                  <control type="image">
+                                          <width>300</width>
+                                          <height>45</height>
+                                          <texture>side.png</texture>
+                                  </control>
+                                  <!--control type="image">
+                                          <left></left>
+                                          <top>3</top>
+                                          <width>40</width>
+                                          <height>40</height>
+                                          <info>ListItem.Icon</info>
+                                  </control-->
+                                  <control type="label">
+                                          <left>10</left>
+                                          <top>3</top>
+                                          <width>430</width>
+                                          <height>42</height>
+                                          <font>font13</font>
+                                          <aligny>center</aligny>
+                                          <selectedcolor>green</selectedcolor>
+                                          <align>left</align>
+                                          <info>ListItem.Label</info>
+                                  </control>
+                                  <control type="label">
+                                          <left>475</left>
+                                          <top>3</top>
+                                          <width>300</width>
+                                          <height>42</height>
+                                          <font>font13</font>
+                                          <aligny>center</aligny>
+                                          <selectedcolor>green</selectedcolor>
+                                          <textcolor>grey</textcolor>
+                                          <align>right</align>
+                                          <info>ListItem.Label2</info>
+                                  </control>
+                        </itemlayout>
+                        <focusedlayout height="45" width="250">
+
+                                  <!--control type="image">
+                                          <left></left>
+                                          <top>3</top>
+                                          <width>40</width>
+                                          <height>40</height>
+                                          <info>ListItem.Icon</info>
+                                  </control-->
+                                  <control type="image">
+                                          <width>300</width>
+                                          <height>45</height>
+                                          <texture>focuseditem.png</texture>
+                                  </control>
+                                  <control type="label">
+                                          <left>10</left>
+                                          <top>3</top>
+                                          <width>430</width>
+                                          <height>42</height>
+                                          <font>font13</font>
+                                          <aligny>center</aligny>
+                                          <selectedcolor>green</selectedcolor>
+                                          <align>left</align>
+                                          <info>ListItem.Label</info>
+                                  </control>
+                                  <control type="label">
+                                          <left>475</left>
+                                          <top>3</top>
+                                          <width>300</width>
+                                          <height>42</height>
+                                          <font>font13</font>
+                                          <aligny>center</aligny>
+                                          <selectedcolor>green</selectedcolor>
+                                          <textcolor>grey</textcolor>
+                                          <align>right</align>
+                                          <info>ListItem.Label2</info>
+                                  </control>
+                        </focusedlayout>
+                  </control>
+              </control>
+          </control>
+          <control type="panel" id="402">
+                <description>New Vids</description>s
+                <left>390</left>
+                <top>50</top>
+                <width>900</width>
+                <height>660</height>
+                <onleft>401</onleft>
+                <ondown>502</ondown>
+                <onup>501</onup>
+                <scrolltime tween="sine" easing="out">200</scrolltime>
+                <autoscroll>true</autoscroll>
+                <viewtype label="536">icon</viewtype>
+                <pagecontrol>60</pagecontrol>
+                <include>contentpanelslide</include>
+                <itemlayout height="163" width="280">
+                        <control type="image">
+                                <left>10</left>
+                                <top>10</top>
+                                <width>270</width>
+                                <height>153</height>
+                                <colordiffuse>99FFFFFF</colordiffuse>
+                                <info>ListItem.Icon</info>
+                        </control>
+                        <control type="image">
+                                <left>80</left>
+                                <top>75</top>
+                                <width>32</width>
+                                <height>32</height>
+                                <info>ListItem.Overlay</info>
+                        </control>
+                        <control type="label">
+                                <left>10</left>
+                                <top>115</top>
+                                <width>260</width>
+                                <height>22</height>
+                                <font>font13</font>
+                                <selectedcolor>green</selectedcolor>
+                                <align>center</align>
+                                <info>ListItem.Label</info>
+                        </control>
+                </itemlayout>
+                <focusedlayout height="153" width="270">
+                        <control type="image">
+                                <left>10</left>
+                                <top>10</top>
+                                <width>270</width>
+                                <height>153</height>
+                                <info>ListItem.Icon</info>
+                                <bordertexture border="5">side.png</bordertexture>
+                                <bordersize>5</bordersize>
+                                <!--animation effect="zoom" end="103" center="360,288" time="500">focus</animation-->
+                        </control>
+                        <control type="image">
+                                <left>10</left>
+                                <top>10</top>
+                                <width>270</width>
+                                <height>153</height>
+                                <texture>side.png</texture>
+                                <info>ListItem.Overlay</info>
+                        </control>
+                        <control type="label">
+                                <left>10</left>
+                                <top>115</top>
+                                <width>260</width>
+                                <height>22</height>
+                                <font>font13</font>
+                                <selectedcolor>green</selectedcolor>
+                                <align>center</align>
+                                <info>ListItem.Label</info>
+                        </control>
+                </focusedlayout>
+        </control>
+<control type="grouplist" id="500">
+  <top>20</top>
+  <left>370</left>
+  <ondown>402</ondown>
+  <onleft>401</onleft>
+  <onright>502</onright>
+  <orientation>horizontal</orientation>
+<control type="button" id="503">
+      <description>Exit</description>
+      <width>222</width>
+      <height>40</height>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <texturefocus>focuseditem.png</texturefocus>
+      <texturenofocus>side.png</texturenofocus>
+      <label>Exit</label>
+      <font>font12</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <focusedcolor>FFFFFFFF</focusedcolor>
+      <disabledcolor>80FFFFFF</disabledcolor>
+      <invalidcolor>FFFFFFFF</invalidcolor>
+      <align>center</align>
+      <aligny>center</aligny>
+      <pulseonselect>true</pulseonselect>
+</control>
+<control type="button" id="501">
+      <description>Previous</description>
+      <width>222</width>
+      <height>40</height>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <texturefocus>focuseditem.png</texturefocus>
+      <texturenofocus>side.png</texturenofocus>
+      <label>Previous</label>
+      <font>font12</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <focusedcolor>FFFFFFFF</focusedcolor>
+      <disabledcolor>80FFFFFF</disabledcolor>
+      <invalidcolor>FFFFFFFF</invalidcolor>
+      <align>center</align>
+      <aligny>center</aligny>
+      <pulseonselect>true</pulseonselect>
+</control>
+<control type="button" id="502">
+      <description>Previous</description>
+      <width>222</width>
+      <height>40</height>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <texturefocus>focuseditem.png</texturefocus>
+      <texturenofocus>side.png</texturenofocus>
+      <label>Next</label>
+      <font>font12</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <focusedcolor>FFFFFFFF</focusedcolor>
+      <disabledcolor>80FFFFFF</disabledcolor>
+      <invalidcolor>FFFFFFFF</invalidcolor>
+      <align>center</align>
+      <aligny>center</aligny>
+      <pulseonselect>true</pulseonselect>
+</control>
+<control type="button" id="504">
+      <description>Search</description>
+      <width>222</width>
+      <height>40</height>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <texturefocus>focuseditem.png</texturefocus>
+      <texturenofocus>side.png</texturenofocus>
+      <label>Search</label>
+      <font>font12</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <focusedcolor>FFFFFFFF</focusedcolor>
+      <disabledcolor>80FFFFFF</disabledcolor>
+      <invalidcolor>FFFFFFFF</invalidcolor>
+      <align>center</align>
+      <aligny>center</aligny>
+      <pulseonselect>true</pulseonselect>
+</control>
+</control>
+  </controls>
+
+</window>

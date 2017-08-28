@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.youporn" 
+	     name="YouPorn" 
+	     version="2.02" 
+	     provider-name="Echo Coder">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">OVER 18 ONLY - Support is available on Twitter @EchoCoding</summary>
+    <description lang="en">YouPorn Scraping by Echo Coder
+
+Skin and code for skin by Demonstratorz</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://www.echocoder.com</forum>
+    <website>http://www.echocoder.com</website>
+    <email>echocoder@protonmail.com</email>
+  </extension>
+</addon>
